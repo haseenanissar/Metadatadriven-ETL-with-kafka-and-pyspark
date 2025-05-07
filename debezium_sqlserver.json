@@ -1,0 +1,15 @@
+{
+    "name": "sqlserver-debezium",
+    "config": {
+      "connector.class": "io.debezium.connector.sqlserver.SqlServerConnector",
+      "database.hostname": "sqlserver",
+      "database.port": "1433",
+      "database.user": "sa",
+      "database.password": "Dummy_432",
+      "database.dbname": "demo",
+      "database.server.name": "mysqlserver",
+      "database.history.kafka.bootstrap.servers": "kafka:9092",
+      "database.history.kafka.topic": "schema-changes.sqlserver"
+    }
+  }
+  
